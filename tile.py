@@ -4,7 +4,6 @@ class Tile:
         self.number = number
 
     def __repr__(self) -> str:
-        print("I AM RUNNING")
         mapping = {
             'SEASON': ['SPRING', 'SUMMER', 'AUTUMN', 'WINTER'],
             'FLOWER': ['PLUM', 'LILY', 'CHRYSANTHEMUM', 'BAMBOO'],

@@ -1,5 +1,5 @@
 from unittest import TestCase
-from tile import Tile, TILES
+from tile import TILES
 
 class TileTest(TestCase):
     def test_tile_counts_are_correct(self):
@@ -17,5 +17,3 @@ class TileTest(TestCase):
         assert len([
             tile for tile in TILES if tile.suit == 'WIND'
         ]) == 16
-
-
