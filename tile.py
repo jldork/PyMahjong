@@ -14,20 +14,3 @@ class Tile:
             return f'{self.suit}: {self.number}'
         else:
             return f'{mapping.get(self.suit)[self.number - 1]} {self.suit}'
-
-
-TILES = 4*([
-    Tile(suit=suit, number=number) 
-    for suit in ['BAMBOO', 'DOT', 'CHARACTER']
-    for number in range(1,10)
-] + [
-    Tile(suit='WIND', number=number)
-    for number in range(1,5)
-] + [
-    Tile(suit='DRAGON', number=number)
-    for number in range(1,4)
-]) + [
-    Tile(suit=suit, number=number)
-    for suit in ['SEASON', 'FLOWER']   
-    for number in range(1,5)
-]
