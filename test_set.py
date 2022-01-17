@@ -44,3 +44,25 @@ class TestSet(TestCase):
         )
 
         assert chow_set.type == 'CHOW'
+
+    def test_set_not_set(self):
+        no_set_tiles = [
+            Tile(
+                suit='CHARACTER',
+                number=1
+            ),
+            Tile(
+                suit='BAMBOO',
+                number=4
+            ), 
+            Tile(
+                suit='CHARACTER',
+                number=3
+            )
+        ]
+
+        no_set_set = Set(
+            tiles = no_set_tiles
+        )
+
+        assert no_set_set.type == None
